@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS函数库</title>
+	<!--    jquery-->
+	    <script src="./js/jquery.min.js"></script>
+		<!--    bootstrap.js-->
+		    <script src="./js/bootstrap.js"></script>
+		<!--    bootstrap.css-->
+		    <link rel="stylesheet" href="./css/bootstrap.css">
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			body{
+				/* background: url(./5.png) no-repeat; */
+				background-size: 100% 800px;
+				background-attachment: fixed;
+				background-color: #fffbf0;
+			}
+			#container{
+				width: 100%;
+				height: 800px;
+				/* background-color: papayawhip; */
+				/* background-color: beige; */
+			
+				display: flex;
+				justify-content: center;
+			}
+			
+			#le{
+				width: 20%;
+				height: 750px;	
+				/* background-color: aliceblue; */
+				/* border: 1px solid red; */
+			}
+		
+			#rt{
+				width: 50%;
+				height: 800px;
+				/* border: 1px solid black; */
+				margin-left: 20px;
+			}
+			#a{
+				height: 300px;
+				background-color: whitesmoke;
+				border: 1px solid lightgray;
+			}
+			#a1{
+				height: 400px;
+				/* background-color: oldlace; */
+				background-color: whitesmoke;
+				/* border: 1px solid lightgray; */
+				/* border: 1px solid red; */
+				margin-top: 20px;
+			}
+			#a  img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 15px;
+				outline: none;
+				border: none;
+			}
+			#btn1{
+				background-color: #F0F8FF;
+				
+			}
+			#btn2{
+				background: linear-gradient(92deg,#ffba40 0%,#ff503e 37%,#ff2f50 81%,#ff1b40 100%);
+			}
+			#a1 p{
+				margin-top: 30px;
+			}
+			#b1{
+				height: 100px;
+				/* border: 1px solid red; */
+			}	
+			a{
+				text-decoration: none;
+				font-weight: 800;
+				color: #333;
+			}
+			a:hover{
+				color: mediumspringgreen;
+				text-decoration: underline;
+			}
+			h1{
+				border-bottom: #db6d4c 4px solid;
+				border-bottom-width: 4px;
+				border-bottom-style: solid;
+				border-bottom-color: rgb(219, 109, 76);
+			}
+		
+			.wrap{
+				height: 250px;
+				/* border: 1px solid green; */
+				font-size: 22px;
+				margin-top: 30px;
+				/* background-color: ghostwhite; */
+				border-bottom: 2px solid grey;
+			}	
+			.wrap:hover{
+				background-color: white;
+			}
+			.b2_le{
+				float: left;
+				width: 30%;
+				/* border: 1px solid red; */
+			}
+			
+			.b2_rt{
+				width: 99%;
+				margin-left: 10px;
+			}
+			
+			span{
+				color: red;
+			}
+			#pimg img{
+				width: 98%;
+			}
+			h1 span{
+				width: 100px;
+				height: 60px;
+				/* border:  1px solid navy; */
+				text-align: right;
+			
+				
+			}
+			ul{
+				
+				display: none;
+				float: right;
+			
+			}
+			.glyphicon:hover ul{
+				display: block;
+			}
+			li{
+				width: 70px;
+				height: 30px;
+				font-size: 20px;
+				margin-top: 10px;
+				
+				/* border:  1px solid navy; */
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="le">
+				<br>
+				<div id='a'>
+					<div style="margin-left: 10px;float: left;">
+						<img src="./img/1.png" >
+					</div>
+					<div style="float: left;width: 130px;height: 100px;margin-left: 20px;margin-top: 20px;">
+						<h3>程序员</h3>
+						<br>
+						<p>码龄5年&nbsp;<span>已认证</span></p>
+					</div>
+					<br>
+					<div style="clear: both;margin-top: 120px;">
+						<h3>&nbsp;&nbsp;简介:</h3>
+						<p>前端全栈工程师，基础扎实，熟练先进技术<</p>
+					</div>
+					
+					<div style="display: flex;margin-left: 20px;margin-top: 30px;">
+						<button type="button" id="btn1">私信</button>
+					    <button type="button" id="btn2">关注</button>
+					</div>
+					
+				</div>
+				
+				
+				<div id="a1">
+					<br>
+					<h3>最新评论</h3>
+					<hr>
+					
+					<p><a href="">卡号: </a> &nbsp;哈哈哈看到asp我马上看了一下发布这篇文章的时间</p>
+					<p><a href="">胡斯柯达: </a> &nbsp;我以后终于会活成这样嘛？大学生瑟瑟发抖ing表情包</p>
+					<p><a href="">及式防控: </a> &nbsp;这个没代码的吧，这个是数据流程图啊表情包</p>
+					<p><a href="">看世界d: </a> &nbsp;求源代码，我是大四的一个学生，写毕业论文向您这里学习，求</p>
+				</div>
+			
+			</div>
+			<div id="rt">
+				<br>
+				<div>
+					<h1>js的函数类库
+					<span class="glyphicon glyphicon-align-left" style="float: right;" aria-hidden="true">
+						<ul>
+							<li><a href=""></a>水电费</li>
+							<li><a href=""></a>是负数</li>
+							<li><a href=""></a>阿打算</li>
+							<li><a href=""></a>阿萨德</li>
+						</ul>
+					</span>
+					</h1><br><br>
+					<p>
+						项目中常用到的一些javascript、jquery方法写成相关的方法，便于日后调用。前几天总结了一些，
+						感觉很多知识要是不用就会彻底忘掉，所以人们常说的量变到一定程度会质变是有道理。言归正传，上函数啦.
+					</p>
+					<br>
+					<p id="pimg">
+						(一)第一个方法是去除前后空格的方法<br><br>
+						<img src="./img/2.1.png" alt="">
+						调用的时候就可以用trim方法了。举个例子：
+						<br><br>
+						<img src="./img/2.2.png" alt="">
+						(二)第二个方法是不能为的方法<br><br>
+						<img src="./img/2.3.png" alt="">
+						调用的时候就可以用empty方法了。举个例子：
+						<img src="./img/2.4.png" alt="">
+						(三)第三个方法是全选方法<br><br>
+						<img src="./img/2.5.png" alt="">
+						(四)第四个方法是不能为空的插件。可根据项目实际需求进行更改<br><br>
+						<img src="./img/2.6.png" alt="">
+						调用的时候就可以用check_null_msg方法了。举个例子：
+						<img src="./img/2.7.png" alt="">
+						(五)检查邮编输入正确<br><br>
+						<img src="./img/2.8.png" alt="">
+						(六)生成随机数<br><br>
+						<img src="./img/2.9.png" alt="">
+						(七)检测邮箱是否正确<br><br>
+						<img src="./img/2.11.png" alt="">
+						(八)检查是否为数字<br><br>
+						<img src="./img/2.12.png" alt="">
+						(九)身份证号验证是否正确<br><br>
+						<img src="./img/2.10.png" alt="">
+						(十)检测手机号码是否正确<br><br>
+						<img src="./img/2.13.png" alt="">
+					</p>
+				</div>
+			
+				<br>
+				
+				
+			</div>
+		
+
+			
+			
+		</div>
+	
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	btn1.onclick=function(){
+			alert('感谢你的来信，博主在忙，请稍等！ ')
+	}
+
+	btn2.onclick=function(){
+		alert('谢谢你的关注！后期博主还会更新更多的技术知识。')
+	}
+</script>
