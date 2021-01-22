@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Webpack 是前端资源模块化管理和打包工具</title>
+	
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			body{
+				background: url(img/2.gif) no-repeat;
+				background-size: 100% 800px;
+				background-attachment: fixed;
+				/* background-color: #fffbf0;; */
+			}
+			#container{
+				width: 100%;
+				height: 800px;
+				/* background-color: papayawhip; */
+				/* background-color: beige; */
+			
+				display: flex;
+				justify-content: center;
+			}
+			
+			#le{
+				width: 20%;
+				height: 750px;	
+				background-color: aliceblue;
+				/* border: 1px solid red; */
+			}
+		
+			#rt{
+				width: 50%;
+				height: 2000px;
+				/* border: 1px solid black; */
+				margin-left: 20px;
+				
+			}
+			#a{
+				height: 300px;
+				background-color: whitesmoke;
+				border: 1px solid lightgray;
+			}
+			#a1{
+				height: 400px;
+				/* background-color: oldlace; */
+				background-color: whitesmoke;
+				/* border: 1px solid lightgray; */
+				/* border: 1px solid red; */
+				margin-top: 20px;
+			}
+			#a  img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 15px;
+				outline: none;
+				border: none;
+			}
+			#btn1{
+				background-color: #F0F8FF;
+				
+			}
+			#btn2{
+				background: linear-gradient(92deg,#ffba40 0%,#ff503e 37%,#ff2f50 81%,#ff1b40 100%);
+			}
+			#a1 p{
+				margin-top: 30px;
+			}
+			#b1{
+				height: 100px;
+				/* border: 1px solid red; */
+			}	
+			a{
+				text-decoration: none;
+				font-weight: 800;
+				color: #333;
+			}
+			a:hover{
+				color: mediumspringgreen;
+				text-decoration: underline;
+			}
+			h1{
+				border-bottom: #db6d4c 4px solid;
+				border-bottom-width: 4px;
+				border-bottom-style: solid;
+				border-bottom-color: rgb(219, 109, 76);
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			.wrap{
+				height: 250px;
+				/* border: 1px solid green; */
+				font-size: 22px;
+				margin-top: 30px;
+				/* background-color: ghostwhite; */
+				border-bottom: 2px solid grey;
+			}	
+			.wrap:hover{
+				background-color: white;
+			}
+			.b2_le{
+				float: left;
+				width: 30%;
+				/* border: 1px solid red; */
+			}
+			
+			.b2_rt{
+				width: 99%;
+				margin-left: 10px;
+			}
+			
+			span{
+				color: red;
+			}
+			#footer{
+				width: 100%;
+				height: 100px;
+				clear: left;
+				margin-top: 20px;
+				/* background-color: aliceblue; */
+				
+			}
+			h1 span{
+				width: 100px;
+				height: 60px;
+				/* border:  1px solid navy; */
+				text-align: right;
+			
+				
+			}
+			ul{
+				
+				display: none;
+				float: right;
+			
+			}
+			.glyphicon:hover ul{
+				display: block;
+			}
+			li{
+				width: 70px;
+				height: 30px;
+				font-size: 20px;
+				margin-top: 10px;
+				
+				/* border:  1px solid navy; */
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="le">
+				<br>
+				<div id='a'>
+					<div style="margin-left: 10px;float: left;">
+						<img src="./img/1.png" >
+					</div>
+					<div style="float: left;width: 130px;height: 100px;margin-left: 20px;margin-top: 20px;">
+						<h3>程序员</h3>
+						<br>
+						<p>码龄5年&nbsp;<span>已认证</span></p>
+					</div>
+					<br>
+					<div style="clear: both;margin-top: 120px;margin-left: 15px;">
+						<h3>&nbsp;&nbsp;简介:</h3>
+						<p>前端全栈工程师，基础扎实，熟练先进技术<</p>
+					</div>
+					
+					<div style="display: flex;margin-left: 20px;margin-top: 30px;">
+						<button type="button" id="btn1">私信</button>
+					    <button type="button" id="btn2">关注</button>
+					</div>
+					
+				</div>
+				
+				
+				<div id="a1">
+					<div style="margin-left: 15px;">
+						<br>
+						<h3>最新评论</h3>
+						<hr>
+						
+						<p><a href="#">星星点灯: </a> &nbsp;哈哈哈看到asp我马上看了一下发布这篇文章的时间</p>
+						<p><a href="#">高消费: </a> &nbsp;我以后终于会活成这样嘛？大学生瑟瑟发抖ing表情包</p>
+						<p><a href="#">戬k: </a> &nbsp;这个没代码的吧，这个是数据流程图啊表情包</p>
+						<p><a href="#">阿布: </a> &nbsp;求源代码，我是大四的一个学生，写毕业论文向您这里学习，求</p>
+					</div>
+					
+				</div>
+			
+			</div>
+			<div id="rt">
+				<br>
+				<div>
+					<h1>
+						Webpack资源模块化管理和打包工具
+					
+					</h1>
+					<br>
+					<h2>一、建立空的文件夹，在文件夹内打开终端，输入npm init 即可</h2><br>
+					相关名词的解释:
+					<p>
+						(1)package name 项目名称，不分大小写
+						<br><br>
+						(2)version 默认为1.0.0
+						<br><br>
+						(3)description 项目描述
+						<br><br>
+						(4)entry point 项目入口文件，目前这阶段不需要设置
+						<br><br>
+						(5)test command    测试命令，目前不需要设置
+						<br><br>
+						(6)git repository  按照真实情况填写，目前不填写
+						<br><br>
+						(7)keywords 关键字
+						<br><br>
+						(8)author 作者</p><br>
+						 项目建立完成之后，会在项目文件夹内生成package.json文件，这是我们项目的配置文件
+					</p>
+				</div>
+			
+				<br>
+				<h2>二、在你的项目文件夹内手动建立一个webpack.config.js的文件，作为webpack插件的配置文件</h2><br><br>
+				
+				<div>
+					<h2>三、安装 webpack 和webpack-cli</h2><br>
+					<p>(1)两个都安装完成后在  终端输入 webpack -v  看下是否安装成功，有版本号出现说明安装成功。</p>
+					<br>
+					<p>(2)安装插件<br>
+					通过使用   npm install --save-dev 插件名  安装，  这个指令安装可以直接添加到写入package.json文件。</p>
+				</div>
+				<br>
+				<div>
+					<h2>四、 配置webpack的入口和出口</h2><br>
+					<p>(1)进入webpack.config.js的文件里配置 </p><br>
+					<p> //第一步，引入系统路径 const path=require('path');</p><br>
+					<p>//第二步，</p>	<br>
+					<pre>module.exports={
+
+	//在这里写入口，出口的代码。
+}
+	</pre>
+	
+					完整的配置代码如下: 	<br>
+					<pre> module.exports={
+
+	//在这里写入口，出口的代码。
+
+	// 入口：可以自己规定从哪里进
+
+	entry:  '你选择的入口文件路径' ,   //   ，命名为entry.js
+
+              //其中出口分为两个部分:
+    
+	output:{
+
+   	      path:path.resolve(__dirname,'dist') ,  //这部分是固定的
+    
+    	      filename:'文件名字需要带后缀',      //一般设置为bundle.js
+	}
+	//还有解析不可识别的文件后缀
+	module:{
+	         rules:[{
+	                test:/.css$/,
+		//解析css需要什么loader
+		use:['style-loader','css-loader']
+		},
+
+		{
+		test:/.less$/,
+		use:['style-loader','css-loader','less-loader']
+		}
+	        ]
+		
+	    }
+       }</pre><br>
+		
+		</div>
+		<div>
+			<h2>五、设置入口文件（entry.js）的内容</h2><br>
+			
+			<p>//引入需要打包的文件</p><br>
+			 require(‘文件路径’)
+			 <br><br>
+			 <p>//到这里以上都配置好 最后在终端执行webpack，即可生成出口文件。</p>
+			 
+		</div>
+		<br><br>
+		<div>
+			<h2>六、最后一点！！！！</h2><br>
+			
+			    (1)//在你写的html文件里引入打包好的出口文件，这样你的界面效果才有<br><br>
+			      
+			   (2) //  在头部head里写<br><br>
+			
+			   (3) 引用合并出来的接口文件  bundle.js文件	<br>
+			     
+				 
+			 	
+		</div>
+				
+		</div>
+		
+
+			
+			
+		</div>
+	
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	btn1.onclick=function(){
+			alert('感谢你的来信，博主在忙，请稍等！ ')
+	}
+
+	btn2.onclick=function(){
+		alert('谢谢你的关注！后期博主还会更新更多的技术知识。')
+	}
+</script>

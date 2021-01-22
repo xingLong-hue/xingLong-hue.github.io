@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>前端学习技术</title>
+	
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			body{
+				background: url(img/6.png) no-repeat;
+				background-size: 100% 800px;
+				background-attachment: fixed;
+				/* background-color: #fffbf0; */
+			}
+			#container{
+				width: 100%;
+				height: 800px;
+				/* background-color: papayawhip; */
+				/* background-color: beige; */
+			
+				display: flex;
+				justify-content: center;
+			}
+			
+			#le{
+				width: 20%;
+				height: 750px;	
+				/* background-color: aliceblue; */
+				/* border: 1px solid red; */
+			}
+		
+			#rt{
+				width: 50%;
+				height: 800px;
+				/* border: 1px solid black; */
+				margin-left: 20px;
+			}
+			#a{
+				height: 300px;
+				background-color: whitesmoke;
+				border: 1px solid lightgray;
+			}
+			#a1{
+				height: 400px;
+				/* background-color: oldlace; */
+				background-color: whitesmoke;
+				/* border: 1px solid lightgray; */
+				/* border: 1px solid red; */
+				margin-top: 20px;
+			}
+			#a  img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 15px;
+				outline: none;
+				border: none;
+			}
+			#btn1{
+				background-color: #F0F8FF;
+				
+			}
+			#btn2{
+				background: linear-gradient(92deg,#ffba40 0%,#ff503e 37%,#ff2f50 81%,#ff1b40 100%);
+			}
+			#a1 p{
+				margin-top: 30px;
+			}
+			#b1{
+				height: 100px;
+				/* border: 1px solid red; */
+			}	
+			a{
+				text-decoration: none;
+				font-weight: 800;
+				color: #333;
+			}
+			a:hover{
+				/* color: mediumspringgreen; */
+				text-decoration: underline;
+			}
+			h1{
+				border-bottom: #db6d4c 4px solid;
+				border-bottom-width: 4px;
+				border-bottom-style: solid;
+				border-bottom-color: rgb(219, 109, 76);
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			.wrap{
+				height: 250px;
+				/* border: 1px solid green; */
+				font-size: 22px;
+				margin-top: 30px;
+				/* background-color: ghostwhite; */
+				border-bottom: 2px solid grey;
+			}	
+			.wrap:hover{
+				background-color: white;
+			}
+			.b2_le{
+				float: left;
+				width: 30%;
+				/* border: 1px solid red; */
+			}
+			
+			.b2_rt{
+				width: 99%;
+				margin-left: 10px;
+			}
+			
+			span{
+				color: red;
+			}
+			#footer{
+				width: 100%;
+				height: 100px;
+				clear: left;
+				margin-top: 20px;
+				/* background-color: aliceblue; */
+				
+			}
+			h1 span{
+				width: 100px;
+				height: 60px;
+				/* border:  1px solid navy; */
+				text-align: right;
+			
+				
+			}
+			ul{
+				
+				display: none;
+				float: right;
+			
+			}
+			.glyphicon:hover ul{
+				display: block;
+			}
+			li{
+				width: 70px;
+				height: 30px;
+				font-size: 20px;
+				margin-top: 10px;
+				
+				/* border:  1px solid navy; */
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="le">
+				<br>
+				<div id='a'>
+					<div style="margin-left: 10px;float: left;">
+						<img src="./img/1.png" >
+					</div>
+					<div style="float: left;width: 130px;height: 100px;margin-left: 20px;margin-top: 20px;">
+						<h3>程序员</h3>
+						<br>
+						<p>码龄5年&nbsp;<span>已认证</span></p>
+					</div>
+					<br>
+					<div style="clear: both;margin-top: 120px;margin-left: 15px;">
+						<h3>&nbsp;&nbsp;简介:</h3>
+						<p>前端全栈工程师，基础扎实，熟练先进技术<</p>
+					</div>
+					
+					<div style="display: flex;margin-left: 20px;margin-top: 30px;">
+						<button type="button" id="btn1">私信</button>
+					    <button type="button" id="btn2">关注</button>
+					</div>
+					
+				</div>
+				
+				
+				<div id="a1">
+					<div style="margin-left: 15px;">
+						<br>
+						<h3>最新评论</h3>
+						<hr>
+						
+						<p><a href="#">好久不见: </a> &nbsp;哈哈哈看到asp我马上看了一下发布这篇文章的时间</p>
+						<p><a href="#">大方向: </a> &nbsp;我以后终于会活成这样嘛？大学生瑟瑟发抖ing表情包</p>
+						<p><a href="#">归口: </a> &nbsp;这个没代码的吧，这个是数据流程图啊表情包</p>
+						<p><a href="#">大沙发: </a> &nbsp;求源代码，我是大四的一个学生，写毕业论文向您这里学习，求</p>
+					</div>
+				
+				</div>
+			
+			</div>
+			<div id="rt">
+				<br>
+				<div>
+					<h1>
+						前端学习技术
+					
+					</h1>
+					<br>
+					<h2>一、前端的三个核心技术</h2><br><br>
+					<p>网页最主要由3部分组成：结构、表现和行为。网页现在新的标准是W3C，目前模式是HTML、CSS和JavaScript。
+					也是前端开发最核心的3个技术。</p><br>
+					<h3>(1)HTML</h3><br><br>
+					<p>HTML，全称“Hyper Text Markup Language（超文本标记语言）”，
+					简单来说，网页就是用HTML语言制作的。HTML是一门描述性语言，是一门非常容易入门的语言。</p><br>
+					<h3>(2)、CSS</h3><br><br>
+					<p>CSS，全称“（层叠样式表）”。以后我们在别的地方看到“层叠样式表”、“CSS样式”，指的就是CSS。</p>
+					<br>
+					<h3>(3)、JavaScript</h3><br><br>
+					<p>JavaScript 是互联网上最流行的脚本语言，是一种轻量级的编程语言。这门语言可用于 HTML 和 web，JavaScript
+					 插入 HTML 页面后，可由所有的现代浏览器执行。更可广泛用于服务器、PC、笔记本电脑、
+					平板电脑和智能手机等设备。</p><br>
+					
+					<h3>(4)、HTML、CSS和JavaScript的区别</h3><br><br>
+					<p>我给大家打个比喻。我们把前端开发的过程比喻成“建房子”，做一个网页就像盖一栋房子，
+					先把房子结构建好（HTML）。建好房子之后给房子装修（CSS），例如往窗户安上窗帘、往地板铺上漂亮的瓷砖。
+					最后呢，装修完了之后，当夜幕降临的时候，我们要开灯（JavaScript），这样才能看得见里面。现在大概懂了吧。</p>
+				</div>
+			
+				<br>
+				<h2>二、前端开发其他技术</h2><br><br>
+				<div>
+					<p>前端技术最核心的是HTML、CSS和JavaScript，但是对于一个真正的前端工程师来说，哪怕你精通这三个，你也不能称为一个真正的“前端工程师”。
+					因为前端技术除了HTML、CSS和JavaScript这三种，还需要学习Ajax、SEO等。</p>
+					<br>
+					<h3>(1)、Ajax</h3><br><br>
+					<p>Ajax，即“Asynchronous Javascript And XML（异步JavaScript和XML）”，
+					是指一种创建交互式网页应用的网页开发技术。
+					通过在后台与服务器进行少量数据交换，Ajax可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，
+					对网页的某部分进行更新。传统的网页（不使用Ajax）如果需要更新内容，必须重载整个页面。Ajax是前后端交互的技术，
+					主要实现在前端。</p><br>
+					<h3>（2）SEO </h3><br><br>
+					<p>
+						SEO，即“Search Engine Optimization（搜索引擎优化）”。SEO优化是专门利用搜索引擎的搜索规则来提高目前网站
+						在有关搜索引擎内的自然排名的方式（国内常见的搜索引擎有百度、360、搜狗等）。
+						简单来说，你建好了网站并不代表你网站就能被搜索引擎搜索到，我们一般使用百度搜索资料时，
+						搜索出来的网页有很多，但是我们一般看了搜索结果的第一、二页就不再往下看了。
+						SEO，就是为了我们的网站能排在搜索结果的前面，这样你的网站才会有流量。你做网站，
+						相信你也是想让你网站有更多人浏览的吧。</p>
+					<br>
+				</div>
+				<h2>三、前端学习路线</h2><br><br>
+				<div>
+					<p>从上面我们可以看出，Web技术实在太多了，很多同学都不知道怎么入手，上网问别人，回答又五花八门。这是本网站推荐的：
+					<span style="color: #FF0000;">HTML入门→CSS入门→HTML进阶→CSS进阶→JavaScript入门→jQuery入门→ASP.NET入门（或PHP入门）→Ajax→ASP.NET进阶（或PHP进阶）</span></p>
+					<br>
+					<p>这一条路线是比较理想的一条从前端开发到后端开发的学习路线，其实你别看这条路线那么长，其实我是截断了来定制的，
+					要掌握的也就几门技术：HTML、CSS、JavaScript、ASP.NET（PHP）、Ajax等。</p><br>
+					<p>我们在HTML刚刚入门的时候，你不需要一定要把HTML学到精通才去学CSS入门教程（这也不可能），这是一种最笨又最浪费时间的学习模式。
+					所以对于初学者，千万千万别想着精通了一门技术，再去精通另外一门技术。你要是能做到了，我相信肯定很多大神都拜你为师了。
+					因为技术这种东西是要“通十行”才会把一行给通了。如果你走别的路线，你可能将会走很多很多的弯路。</p><br>
+					<p>这条路线是本人从前端技术初学者开始，到开发了绿叶学习网、广州智能工程研究会网站、毕业选题系统、
+					大量在线工具等项目以及阅读大量技术书籍之后的的心血总结。当然，这条路线也是一个建议，并非强硬。
+					接下来，就是我们踏入前端开发的第一步——HTML入门教程。</p>
+					
+					
+					<br>
+					
+					<br>
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+	
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	btn1.onclick=function(){
+			alert('感谢你的来信，博主在忙，请稍等！ ')
+	}
+
+	btn2.onclick=function(){
+		alert('谢谢你的关注！后期博主还会更新更多的技术知识。')
+	}
+</script>

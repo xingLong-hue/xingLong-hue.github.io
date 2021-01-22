@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Git简易指南</title>
+	
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			body{
+				/* background: url(./img/3.gif) no-repeat; */
+				background-size: 100% 800px;
+				background-attachment: fixed;
+				/* background-color: #fffbf0; */
+			}
+			#container{
+				width: 100%;
+				height: 800px;
+				/* background-color: papayawhip; */
+				/* background-color: beige; */
+			
+				display: flex;
+				justify-content: center;
+			}
+			
+			#le{
+				width: 20%;
+				height: 750px;	
+				/* background-color: aliceblue; */
+				/* border: 1px solid red; */
+			}
+		
+			#rt{
+				width: 50%;
+				height: 800px;
+				/* border: 1px solid black; */
+				margin-left: 20px;
+			}
+			#a{
+				height: 300px;
+				background-color: whitesmoke;
+				border: 1px solid lightgray;
+			}
+			#a1{
+				height: 400px;
+				/* background-color: oldlace; */
+				background-color: whitesmoke;
+				/* border: 1px solid lightgray; */
+				/* border: 1px solid red; */
+				margin-top: 20px;
+			}
+			#a  img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 15px;
+				outline: none;
+				border: none;
+			}
+			#btn1{
+				background-color: #F0F8FF;
+				
+			}
+			#btn2{
+				background: linear-gradient(92deg,#ffba40 0%,#ff503e 37%,#ff2f50 81%,#ff1b40 100%);
+			}
+			#a1 p{
+				margin-top: 30px;
+			}
+			#b1{
+				height: 100px;
+				/* border: 1px solid red; */
+			}	
+			a{
+				text-decoration: none;
+				font-weight: 800;
+				color: #333;
+			}
+			a:hover{
+				color: mediumspringgreen;
+				text-decoration: underline;
+			}
+			h1{
+				border-bottom: #db6d4c 4px solid;
+				border-bottom-width: 4px;
+				border-bottom-style: solid;
+				border-bottom-color: rgb(219, 109, 76);
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			.wrap{
+				height: 250px;
+				/* border: 1px solid green; */
+				font-size: 22px;
+				margin-top: 30px;
+				/* background-color: ghostwhite; */
+				border-bottom: 2px solid grey;
+			}	
+			.wrap:hover{
+				background-color: white;
+			}
+			.b2_le{
+				float: left;
+				width: 30%;
+				/* border: 1px solid red; */
+			}
+			
+			.b2_rt{
+				width: 99%;
+				margin-left: 10px;
+			}
+			
+			span{
+				color: red;
+			}
+			#footer{
+				width: 100%;
+				height: 100px;
+				clear: left;
+				margin-top: 20px;
+				/* background-color: aliceblue; */
+				
+			}
+			h1 span{
+				width: 100px;
+				height: 60px;
+				/* border:  1px solid navy; */
+				text-align: right;
+			
+				
+			}
+			ul{
+				
+				display: none;
+				float: right;
+			
+			}
+			.glyphicon:hover ul{
+				display: block;
+			}
+			li{
+				width: 70px;
+				height: 30px;
+				font-size: 20px;
+				margin-top: 10px;
+				
+				/* border:  1px solid navy; */
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="le">
+				<br>
+				<div id='a'>
+					<div style="margin-left: 10px;float: left;">
+						<img src="./img/1.png" >
+					</div>
+					<div style="float: left;width: 130px;height: 100px;margin-left: 20px;margin-top: 20px;">
+						<h3>程序员</h3>
+						<br>
+						<p>码龄5年&nbsp;<span>已认证</span></p>
+					</div>
+					<br>
+					<div style="clear: both;margin-top: 120px;margin-left: 15px;">
+						<h3>&nbsp;&nbsp;简介:</h3>
+						<p>前端全栈工程师，基础扎实，熟练先进技术</p>
+					</div>
+					
+					<div style="display: flex;margin-left: 20px;margin-top: 30px;">
+						<button type="button" id="btn1">私信</button>
+					    <button type="button" id="btn2">关注</button>
+					</div>
+					
+				</div>
+				
+				
+				<div id="a1">
+					<div style="margin-left: 15px;">
+						<br>
+						<h3>最新评论</h3>
+						<hr>
+						
+						<p><a href="#">炒饭用户: </a> &nbsp;哈哈哈看到asp我马上看了一下发布这篇文章的时间</p>
+						<p><a href="#">s计划: </a> &nbsp;我以后终于会活成这样嘛？大学生瑟瑟发抖ing表情包</p>
+						<p><a href="#">哈拉少: </a> &nbsp;这个没代码的吧，这个是数据流程图啊表情包</p>
+						<p><a href="#">笔画: </a> &nbsp;求源代码，我是大四的一个学生，写毕业论文向您这里学习，求</p>
+					</div>
+					
+				</div>
+			
+			</div>
+			<div id="rt">
+				<br>
+				<div>
+					<h1>
+						Git简易指南
+					
+					</h1>
+					<br>
+					<h2>官网下载安装合适的系统版本号</h2><br>
+					<h2>一、如果文件夹或者项目没有git仓库，那么需要新建一个仓库</h2><br>
+					
+					<p>
+						(1)终端进入该文件夹，然后输入git init指令
+						<br><br>
+						(2) 创建完毕之后，此时你是处于master分支下的
+						<br><br>
+						(3)克隆项目仓库   git clone 仓库链接 <br><br>
+					</p>
+				</div>
+			
+				<br>
+				<h2>二、如果拿到了项目文件夹，此时作为小组成员，你需要新建一个分支</h2><br><br>
+				 (1) 创建分支    git checkout -b 分支名称<br><br>
+				 (2) 克隆项目仓库   git clone 仓库链接 <br><br>
+				 (3)将本文件夹内的所有数据列表进行刷新       git add .  <br><br>
+				 (4) git commit -m "备注信息" 正式提交代码    //这是提交到本地仓库<br><br>
+				 (5)如果要把本地仓库的代码，推送到线上仓库: git push -u origin 线上仓库的分支的名称
+				<br><br>
+				<div>
+					<h2>三、分支的基本操作</h2><br>
+					<p>(1)切换分支 <br><br>
+						git checkout 分支名称<br><br>
+					   (2) 合并分支，其他分支的代码合并到当前的分支下<br><br>
+					   git merge 分支名称<br><br>
+					   (3)更新线上分支 <br><br>
+					   git pull origin 你要更新的分支的名称
+    
+    
+
+					</p>
+					<br>
+					
+				</div>
+				<br>
+				
+				
+			</div>
+		
+
+			
+			
+		</div>
+	
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	btn1.onclick=function(){
+			alert('感谢你的来信，博主在忙，请稍等！ ')
+	}
+
+	btn2.onclick=function(){
+		alert('谢谢你的关注！后期博主还会更新更多的技术知识。')
+	}
+</script>
