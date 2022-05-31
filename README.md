@@ -1,2 +1,2 @@
 # xingLong-hue.github.io
-个人博客
+仿写个人博客页面练习
